@@ -34,7 +34,7 @@ public class EmployeeController {
     @GetMapping("/new")
     public String nuevoEmpleadoFrm(Model model, @ModelAttribute("employee") Employee employee) {
         model.addAttribute("listaJefes", getListaJefes());
-        return "employee/newFrm";
+        return "employee/editFrm";
     }
 
     public List<Employee> getListaJefes() {
