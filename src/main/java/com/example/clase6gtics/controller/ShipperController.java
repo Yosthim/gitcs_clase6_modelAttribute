@@ -31,7 +31,7 @@ public class ShipperController {
     }
 
     @GetMapping("/new")
-    public String nuevoTransportistaFrm() {
+    public String nuevoTransportistaFrm(@ModelAttribute("shipper") Shipper shipper) {
         return "shipper/editFrm";
     }
 
